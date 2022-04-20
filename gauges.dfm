@@ -28,7 +28,7 @@ object Form1: TForm1
     ShowText = False
   end
   object SpeedButton1: TSpeedButton
-    Left = 240
+    Left = 264
     Top = 216
     Width = 233
     Height = 57
@@ -42,7 +42,7 @@ object Form1: TForm1
     OnClick = SpeedButton1Click
   end
   object SpeedButton2: TSpeedButton
-    Left = 240
+    Left = 264
     Top = 304
     Width = 233
     Height = 57
@@ -93,7 +93,7 @@ object Form1: TForm1
     ShowText = False
   end
   object SEdit1: TSpinEdit
-    Left = 536
+    Left = 560
     Top = 280
     Width = 41
     Height = 22
