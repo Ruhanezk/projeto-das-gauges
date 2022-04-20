@@ -10,6 +10,7 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
+  KeyPreview = True
   OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
@@ -21,36 +22,9 @@ object Form1: TForm1
     BorderStyle = bsNone
     Color = clBtnFace
     Kind = gkVerticalBar
-    MaxValue = 10000
+    MaxValue = 10000000
     ParentColor = False
     Progress = 0
-    ShowText = False
-  end
-  object Gauge3: TGauge
-    Left = 96
-    Top = 516
-    Width = 705
-    Height = 65
-    BackColor = clBlack
-    BorderStyle = bsNone
-    ForeColor = clWhite
-    MaxValue = 1000
-    Progress = 1000
-    ShowText = False
-  end
-  object Gauge2: TGauge
-    Left = 736
-    Top = 40
-    Width = 65
-    Height = 481
-    BackColor = clBlack
-    BorderStyle = bsNone
-    Color = clBtnFace
-    ForeColor = clWhite
-    Kind = gkVerticalBar
-    MaxValue = 10000
-    ParentColor = False
-    Progress = 10000
     ShowText = False
   end
   object SpeedButton1: TSpeedButton
@@ -87,16 +61,36 @@ object Form1: TForm1
     Width = 705
     Height = 65
     BorderStyle = bsNone
-    MaxValue = 10000
+    MaxValue = 10000000
     Progress = 0
     ShowText = False
   end
-  object Panel1: TPanel
-    Left = 200
-    Top = 189
-    Width = 417
-    Height = 201
-    TabOrder = 1
+  object Gauge3: TGauge
+    Left = 96
+    Top = 516
+    Width = 705
+    Height = 65
+    BackColor = clBlack
+    BorderStyle = bsNone
+    ForeColor = clWhite
+    MaxValue = 10000000
+    Progress = 10000000
+    ShowText = False
+  end
+  object Gauge2: TGauge
+    Left = 736
+    Top = 40
+    Width = 65
+    Height = 481
+    BackColor = clBlack
+    BorderStyle = bsNone
+    Color = clBtnFace
+    ForeColor = clWhite
+    Kind = gkVerticalBar
+    MaxValue = 10000000
+    ParentColor = False
+    Progress = 10000000
+    ShowText = False
   end
   object SEdit1: TSpinEdit
     Left = 536

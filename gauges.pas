@@ -16,13 +16,12 @@ type
     SpeedButton1: TSpeedButton;
     SpeedButton2: TSpeedButton;
     SEdit1: TSpinEdit;
-    Panel1: TPanel;
     procedure SpeedButton1Click(Sender: TObject);
     procedure SpeedButton2Click(Sender: TObject);
   private
     { Private declarations }
   public
-    { Public declarations }
+  { Public declarations }
   end;
 
 var
@@ -37,10 +36,12 @@ var a, e, i, o, u : integer;
     begin
     u := SEdit1.Value;
     if u = 0 then
+      showmessage ('Nenhum número de looping definido');
+    if u = 0 then
       abort;
     Gauge1.Progress := 0;
-    Gauge2.Progress := 10000;
-    Gauge3.Progress := 10000;
+    Gauge2.Progress := 10000000;
+    Gauge3.Progress := 10000000;
     Gauge4.Progress := 0;
         a := gauge1.MaxValue;
         gauge1.Progress := gauge1.progress +1;
@@ -91,15 +92,16 @@ var a, e, i, o, u : integer;
 
 procedure TForm1.SpeedButton2Click(Sender: TObject);
 var b, c, d, f, g : integer;
-
     begin
     g := SEdit1.Value;
     if g = 0 then
+      showmessage ('Nenhum número de looping definido');
+    if g = 0 then
       abort;
-    Gauge1.Progress := 10000;
+    Gauge1.Progress := 10000000;
     Gauge2.Progress := 0;
     Gauge3.Progress := 0;
-    Gauge4.Progress := 10000;
+    Gauge4.Progress := 10000000;
                       b := gauge1.MinValue;
                       gauge1.Progress := gauge1.progress -1;
                         repeat
